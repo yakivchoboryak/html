@@ -1,0 +1,145 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: skyblue;
+}
+
+nav {
+  border-radius: 1%;
+  float: left;
+  width: 18%;
+  height: 450px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 5px;
+}
+p{
+    text-align: justify;
+}
+nav a {
+  color: black;
+  text-decoration: none;
+  transition: 200ms;
+}
+
+nav a:hover {
+  color: seashell;
+}
+
+h1 {
+  display: block;
+  text-align: left;
+  margin-left: 20px;
+}
+h3 {
+  font-size: 2pc;
+}
+h4 {
+  color: slateblue;
+  text-overflow: clip;
+  font-size: 28px;
+}
+
+.leftimg {
+  float: left;
+  margin: 0px 7px 7px 0;
+}
+.rightimg{
+    float: right;
+  margin: 7px 7px 7px 7px;
+}
+
+div {
+  background-color: rgb(167, 214, 233);
+  justify-content: center;
+  text-align: left;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.name {
+  text-align: center;
+  background-color: #f1f1f1;/*для старих браузерів*/
+  border-radius: 20px;
+  margin: 5px;
+  background: linear-gradient(to top,  rgb(210, 204, 250), #f1f1f1);
+  padding: 10px;
+ border: 1px solid  rgb(210, 204, 250);
+}
+
+.card {
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  padding: 5px;
+  height: 50px;
+  width: 260px;
+  border-radius: 25px;
+  background-color: #ffffff;
+  box-shadow: 5px 0 40px rgba(0, 0, 0, 0.5);
+}
+
+body .card {
+  transform: scale(1);
+  transition: 1s;
+}
+
+body .card:hover {
+  transform: scale(0.9);
+
+
+  background-color: #aaf;
+}
+
+a {
+  text-decoration: none;
+}
+
+article {
+  border-radius: 1%;
+  float: left;
+  padding: 10px;
+  width: 62%;
+  background-color: #f1f1f1;
+  height: 450px; /* only for demonstration, should be removed */
+}
+
+.registration {
+  border-radius: 1%;
+  display: inline-flexbox;
+  float: left;
+  width: 20%;
+  height: 450px; /* only for demonstration, should be removed */
+  background: rgb(184, 184, 184);
+  padding: 5px;
+}
+
+input {
+  color: blueviolet;
+  background-color: rgb(209, 209, 253);
+  border-radius:10% ;
+}
+
+img {
+  border-radius: 10px;
+  margin-top: 5px;
+}
+iframe {
+  margin-left: 400px;
+}
+
+.totopimg:hover{
+
+    transform: scale(0.8);
+  transition: 1s;
+  
+}
+
+footer {
+  text-align: center;
+}

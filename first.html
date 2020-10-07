@@ -1,33 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="icon" href="https://www.flaticon.com/svg/static/icons/svg/911/911138.svg">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css"/>
     <title>Volleyball</title>
   </head>
-  <!--<style>
-    .leftimg {
-     float:left;
-     margin: 7px 7px 7px 0;
-    }
-    }
-   </style>-->
   <body>
     <a id="top"></a>
     <h1>About Volleyball</h1>
-    
-      <h3 ><a href="#volleyball">volleyball</a></h3>
-      <h3 ><a href="#history">History</a></h3>
-      <h3 ><a href="#rules">Rules</a></h3>
-      <h3 ><a href="#skills">Skills</a></h3>
-      <h3 ><a href="#bottom">scroll to bottom</a></h3>
-    
-<hr>
-<section>
-    <div>
+    <nav>          
+      <h3 class="card"><a href="#volleyball"><img width=30 height=30 src=https://www.flaticon.com/svg/static/icons/svg/3116/3116292.svg>Volleyball</a></h3>
+      <h3 class="card"><a href="#history"><img width=30 height=30 src=https://www.flaticon.com/svg/static/icons/svg/3593/3593584.svg>History</a></h3>
+      <h3 class="card"><a href="#rules"><img width=30 height=30 src=https://image.flaticon.com/icons/png/512/3191/3191854.png>Rules</a></h3>
+      <h3 class="card"><a href="#skills"><img width=30 height=30 src=https://www.flaticon.com/svg/static/icons/svg/3116/3116392.svg>Skills</a></h3>
+      <h3 class="card"><a href="#bottom"><img width=30 height=30 src=https://www.flaticon.com/svg/static/icons/svg/37/37085.svg>scroll to bottom</a></h3>
+    </nav>
 
+    <article>
+ 
         <p>
-            <dt><h2><b name="volleyball">Volleyball</b></h2></dt> 
+            <dt><b name="volleyball">Volleyball</b></dt> 
             <dd> 
                 is a <a href="https://en.wikipedia.org/wiki/Team_sport">team sport</a>  in which two teams of six
               players are separated by a net. Each team tries to score points by
@@ -50,9 +44,9 @@
               way that the serving team is unable to prevent it from being grounded in
               their court.
           </p>
-    </div>
-
     
+
+  
         <ul>
           <li><b>causing the ball to touch the ground or floor outside the opponents' court or without first passing over the net;</b></li>
           <li><b>catching and throwing the ball;</b></li>
@@ -62,26 +56,82 @@
           <li><b>foot fault: the foot crosses over the boundary line when serving.</b></li>
       </ul> 
     
-    <div>
+    
           <p>
               <b>The ball is usually played with the hands or arms, but players can legally strike or push (short contact) the ball with any part of the body.</b></p>
               <p>
               A number of consistent techniques have evolved in volleyball, including spiking and blocking (because these plays are made above the top of the net, the 
               vertical jump is an athletic skill emphasized in the sport) as well as passing, setting, and specialized player positions and offensive and defensive structures.
           </p>
-    </div> 
-</secton>
+     
 
-  <img height="900" width="1600" src="https://img.olympicchannel.com/images/image/private/t_16-9_1920/f_auto/v1536936974/primary/exvzqcvorticinejmmel" 
+</article>
+<div class="registration">
+
+  <legend>Registration</legend>
+
+  <fieldset>
+  <legend>Form</legend>
+      <label for="username">Username<span>*</span><br></label>
+      <input type="text" name="username" id="username" pattern="[a-zA-z0-9]{8,}" required><br>
+
+      <label>Email<span>*</span><br></label>
+      <input type="email" name="email" placeholder="example@example.com" required><br>
+
+      <label for="password">Password<span>*</span><br>
+      <input type="password" name="password" id="password" required><br></label>
+      
+      <label>Date of birth<span>*</span><br></label>
+      <input type="date" name="birthday" max="2002-09-17" value="2020-09-18" required><br>
+     
+
+      <label>Gender<span>*</span><br></label>
+      <input type="text" name="gender" list="gender" required><br>
+      <datalist id="gender">
+          <option value="male"></option>
+          <option value="female"></option>
+      </datalist>
+
+      <label>Your region<span>*</span><br></label>
+      <input type="radio" name="region" value="UA" required>
+      <label for="region">UA</label>
+
+      <input type="radio" name="region" value="UK" required>
+      <label for="region">UK</label>
+  </fieldset>
+
+  <fieldset>
+      <legend>Select your interests</legend>
+
+      <input type="checkbox" name="bicycle">
+      <label for="bicycle">I have bicycle</label><br>
+
+      <input type="checkbox" name="games">
+      <label for="art">Games</label><br>
+
+      <input type="checkbox" name="music">
+      <label for="music">Music</label><br>               
+
+  </fieldset>
+
+  <br>
+  <input type="submit" value="Sign up">
+
+</form>
+</div>
+  <img height="880" width="1504" src="https://img.olympicchannel.com/images/image/private/t_16-9_1920/f_auto/v1536936974/primary/exvzqcvorticinejmmel" 
   alt="Photo">
 
 
 <a id="history"></a>
+<div class="name">
 <h2>History</h2>
+</div>
 
-<hr>
-<h4>Origin of volleyball</h4>
 <div>
+
+<h4>Origin of volleyball</h4>
+
     <p>
         In the winter of 1895, in Holyoke, Massachusetts (United States), William G. Morgan, a YMCA physical education director, created 
         a new game called Mintonette, a name derived from the game of badminton, as a pastime to be played (preferably) indoors and 
@@ -104,12 +154,12 @@
         spelled as two words: "volley ball"). Volleyball rules were slightly modified by the International YMCA Training School and the 
         game spread around the country to various YMCAs.
     </p>
-</div>
-<div>
-  <img height="200" width="300" src="https://bstatic.com/xdata/images/xphoto/1182x887/73542228.jpg?k=f42ea77af5c0919d2b9a3651c4a744cfaa9cf625b66e3c851080e7f74bf61a11&o=?size=S" 
-  alt="Photo" > <!--class="leftimg"-->
+
+  
       <h4>Refinements and later developments</h4>
     <p>
+      <img height="200" width="300" class="leftimg" src="https://bstatic.com/xdata/images/xphoto/1182x887/73542228.jpg?k=f42ea77af5c0919d2b9a3651c4a744cfaa9cf625b66e3c851080e7f74bf61a11&o=?size=S" 
+  alt="Photo" >
         The first official ball used in volleyball is disputed; some sources say Spalding created the first official ball in 1896, while others
         claim it was created in 1900. The rules evolved over time: in 1916, in the Philippines, the skill and power of the set and spike 
         had been introduced, and four years later a "three hits" rule and a rule against hitting from the back row were established. 
@@ -134,8 +184,7 @@
           at the Paralympics managed by the World Organization Volleyball for Disabled.
     </p>
 
- </div>  
-  <div>
+
         <h4>Volleyball in the Olympics</h4>
         <p>
               <i> Main article:<a href="https://en.wikipedia.org/wiki/Volleyball_at_the_Summer_Olympics"> Volleyball at the Summer Olympics</a></i>
@@ -146,13 +195,17 @@
   </div>
 
  <a id="rules"></a>
-<h2 >Rules of the game</h2>
+ <div class="name">
+  <h2 >Rules of the game</h2>
+  </div>
+
   
-<hr>
+
 <div>
-    <h4>The court dimensions</h4>
-    <img height="620" width="400" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/VolleyballRotation.svg/800px-VolleyballRotation.svg.png" 
+    
+    <img height="620" width="400" class="rightimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/VolleyballRotation.svg/800px-VolleyballRotation.svg.png" 
       alt="Photo">
+      <h4>The court dimensions</h4>
     <p>
       A volleyball court is 9 m × 18 m (29.5 ft × 59.1 ft), divided into equal square halves by a net with a width of one meter (39.4 in). The top of the net is 2.43 m
        (7 ft 11 11⁄16 in) above the center of the court for men's competition, and 2.24 m (7 ft 4 3⁄16 in) for women's competition, varied for veterans and junior competitions.
@@ -175,11 +228,11 @@
           net perpendicular to the sideline and is a vertical extension of the side boundary of the court. A ball passing over the net must pass completely between the
             antennae (or their theoretical extensions to the ceiling) without contacting them.
     </p>
-</div>
+
 
 <h4>The ball</h4>
 
-<div>
+
     <p>
       <i> Main article: Volleyball (ball)</i>
     </p>
@@ -219,10 +272,10 @@
          of support to reach the ball, stepping over the back boundary line when serving, taking more than 8 seconds to serve, or playing the ball 
          when it is above the opponent's court.
     </p>
-</div>
+
 
 <h4>Scoring</h4>
-<div>
+
     <p>
       A point is scored when the ball contacts the floor within the court boundaries or when an error is made: when the ball strikes one team's side of the court,
        the other team gains a point; and when an error is made, the team that did not make the error is awarded a point, in either case paying no regard to whether
@@ -242,10 +295,10 @@
        and games were played to 30 points through 2007. For the 2008 season, games were renamed "sets" and reduced to 25 points to win. Most high
         schools in the U.S. changed to rally scoring in 2003, and several states implemented it the previous year on an experimental basis.
     </p>
-</div>
+
 
 <h4>Libero</h4>
-<div>
+
     <p>
         The libero player was introduced internationally in 1998, and made its debut for NCAA competition in 2002. The libero is a player
         specialized in defensive skills: the libero must wear a contrasting jersey color from their teammates and cannot block or attack 
@@ -287,17 +340,19 @@
     </p>
 </div>
 <a id="skills"></a>
-<h2>Skills</h2>
 
-<hr>
+<div class="name">
+  <h2>Skills</h2>
+  </div>
 
+<div>
 <p>
     Competitive teams master six basic skills: serve, pass, set, attack, block and dig. Each of these skills comprises a number of specific techniques that have been
    introduced over the years and are now considered standard practice in high-level volleyball.
 </p>
 
 <h4>Serve</h4>
-<div>
+
   <p>
       A player stands behind the inline and serves the ball, in an attempt to drive it into the opponent's court. The main objective is to make it land inside the court;
       it is also desirable to set the ball's direction, speed and acceleration so that it becomes difficult for the receiver to handle it properly. A serve is called an
@@ -306,7 +361,7 @@
       <p></p>
       In contemporary volleyball, many types of serves are employed:
   </p>
-</div>
+
 
 <section>
 <ul>
@@ -320,7 +375,7 @@
 </section>
 
 <h4>Pass</h4>
-<div>
+
     <p>Also called reception, the pass is the attempt by a team to properly handle the opponent's serve or any form of attack. Proper handling includes not only preventing the ball
       from touching the court but also making it reach the position where the setter is standing quickly and precisely.
       </p>
@@ -356,109 +411,22 @@
 
 
    
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CqMJ3B8sALY" frameborder="0" 
+<iframe width="700" height="400" src="https://www.youtube.com/embed/CqMJ3B8sALY" frameborder="0" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
 
-<blockquote cite="https://en.wikipedia.org/">taken from <a href="https://en.wikipedia.org/wiki/Volleyball">wikipedia</a><blockquote/>
 
-
-          <fieldset>
-              <legend>Registration</legend>
-
-              <fieldset>
-              <legend>Form</legend>
-                  <label for="username">Username<span>*</span><br></label>
-                  <input type="text" name="username" id="username" pattern="[a-zA-z0-9]{8,}" required><br>
-
-                  <label>Email<span>*</span><br></label>
-                  <input type="email" name="email" placeholder="example@example.com" required><br>
-
-                  <label for="password">Password<span>*</span><br>
-                  <input type="password" name="password" id="password" required><br></label>
-                  
-                  <label>Date of birth<span>*</span><br></label>
-                  <input type="date" name="birthday" max="2002-09-17" value="2020-09-18" required><br>
-                 
-      
-                  <label>Gender<span>*</span><br></label>
-                  <input type="text" name="gender" list="gender" required><br>
-                  <datalist id="gender">
-                      <option value="male"></option>
-                      <option value="female"></option>
-                  </datalist>
-      
-                  <label>Your region<span>*</span><br></label>
-                  <input type="radio" name="region" value="UA" required>
-                  <label for="region">UA</label>
-      
-                  <input type="radio" name="region" value="UK" required>
-                  <label for="region">UK</label>
-              </fieldset>
-
-              <fieldset>
-                  <legend>Select your interests</legend>
-      
-                  <input type="checkbox" name="bicycle">
-                  <label for="bicycle">I have bicycle</label><br>
-
-                  <input type="checkbox" name="games">
-                  <label for="art">Games</label><br>
-      
-                  <input type="checkbox" name="music">
-                  <label for="music">Music</label><br>               
-     
-              </fieldset>
-
-              <br>
-              <input type="submit" value="Sign up">
-          </fieldset>
-      </form>
+          
     
 
-    <pre>
-                            ██████                          
-                              ██                            
-                              ██                            
-                              ██                            
-                              ██                            
-                            ██████                          
-                                      
-                                      
-                ▓▓▓▓▓▓▓▓▓▓▓▓      ▓▓▓▓▓▓▓▓▓▓                
-                ▓▓▓▓▓▓▓▓▓▓▓▓      ▓▓▓▓▓▓▓▓▓▓                
-            ▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▓▓▓▓            
-            ▓▓▓▓▒▒▒▒▒░░░░▒▒▒▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▓▓▓▓            
-          ▓▓▒▒▒▒▒▒▒▒░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓        
-         ▓▓▓▒▒▒▒▒▒▒▒░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓        
-         ▓▓▓▒▒▒▒░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓        
-         ▓▓▓▒▒▒▒░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓        
-          ▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓        
-           ▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░▓▓          
-            ▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░▓▓▓▓            
-               ▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓               
-               ▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓               
-                   ▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓                  
-                   ▓▓▓▓▒▒▒▒▒▒▒▒▒▒░░░░▓▓                 
-                       ▓▓▓▓▒▒▒▒▒▒▓▓▓▓                      
-                       ▓▓▓▓▒▒▒▒▒▒▓▓▓▓                      
-                           ▓▓▓▓▓▓                          
-                           ▓▓▓▓▓▓
-                                     
-██  ██    ██    ██    ██    ████  ██  ██  ██      ██    ██    ██  
-██  ██  ██  ██  ██    ██    ████    ██    ████  ██  ██  ██    ██
-  ██      ██    ████  ████  ████    ██    ████  ██  ██  ████  ████
-        
-        </pre>
-<div>
   <footer>
- <a href="#top"><img height="100" width="100" src="https://icon-library.com/images/back-to-top-icon-png/back-to-top-icon-png-16.jpg" 
+ <a href="#top"><img class="totopimg" height="100" width="100" src="https://www.flaticon.com/svg/static/icons/svg/2767/2767933.svg" 
   alt="Photo"></a>
   <address>Ukraine, Chernivci</address>
  
-</div>
+
 <a name="bottom"></a>
   </body>
   <hr>
-  <strong>Yuriy Fedkovych Chernivtsi National University-2020</strong>
+  <strong>&copy Yuriy Fedkovych Chernivtsi National University-2020</strong>
 </footer>
 </html>
